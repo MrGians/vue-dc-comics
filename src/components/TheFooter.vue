@@ -60,7 +60,25 @@
       </div>
     </section>
     <!-- Footer Bottom -->
-    <section id="footer-bottom"></section>
+    <section id="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- SignUp Now Btn -->
+          <div class="col">
+            <a class="btn" href="#">Sign-up Now!</a>
+          </div>
+          <!-- Social Follow Links -->
+          <div class="col social-links">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope" /></a>
+            <a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest" /></a>
+            <a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 </template>
 
@@ -194,7 +212,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Component */
+/* Component | Footer Top */
 #footer-top {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -244,5 +262,51 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Component | Footer Bottom */
+#footer-bottom {
+  background-color: grey;
+}
+
+#footer-bottom .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-bottom .col .btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  margin: 1.5rem 0;
+  border: 2px solid blue;
+}
+
+#footer-bottom .social-links {
+  display: flex;
+}
+
+#footer-bottom .social-links > * {
+  padding: 0.5rem;
+}
+
+#footer-bottom .social-links h4 {
+  text-transform: uppercase;
+  color: blue;
+}
+
+#footer-bottom .social-links a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#footer-bottom .social-links img {
+  width: 100%;
+  height: 100%;
 }
 </style>
