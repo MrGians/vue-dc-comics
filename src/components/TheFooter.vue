@@ -10,21 +10,18 @@
             <div id="dc-comics">
               <h4>DC Comics</h4>
               <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li v-for="(link, i) in dcComicsLinks" :key="i">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
               </ul>
             </div>
             <!-- Shop List -->
             <div id="shop">
               <h4>Shop</h4>
               <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li v-for="(link, i) in shopLinks" :key="i">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -32,19 +29,10 @@
             <!-- DC -->
             <div id="dc">
               <h4>DC</h4>
-
               <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li v-for="(link, i) in dcLinks" :key="i">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -52,13 +40,10 @@
             <!-- Sites -->
             <div id="sites">
               <h4>Sites</h4>
-
               <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li v-for="(link, i) in sitesLinks" :key="i">
+                  <a :href="link.url">{{ link.text }}</a>
+                </li>
               </ul>
             </div>
           </div>
