@@ -1,15 +1,17 @@
 <template>
   <div>
     <TheHeader />
+    <MainContent />
   </div>
 </template>
 
 <script>
 import TheHeader from "./components/TheHeader.vue";
+import MainContent from "./components/MainContent.vue";
 
 export default {
   name: "App",
-  components: { TheHeader },
+  components: { TheHeader, MainContent },
 };
 </script>
 
