@@ -2,16 +2,18 @@
   <div>
     <TheHeader />
     <MainContent />
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from "./components/TheHeader.vue";
 import MainContent from "./components/MainContent.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   name: "App",
-  components: { TheHeader, MainContent },
+  components: { TheHeader, MainContent, TheFooter },
 };
 </script>
 
