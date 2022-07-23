@@ -9,7 +9,9 @@
         <!-- Navbar Links -->
         <ul>
           <li v-for="(link, i) in links" :key="i">
-            <a :class="{ active: link.current }" :href="link.url">{{ link.text }}</a>
+            <a :class="{ active: currentLink === i }" @click="currentLink = i" :href="link.url">
+              {{ link.text }}
+            </a>
           </li>
         </ul>
       </nav>
@@ -22,6 +24,7 @@ export default {
   name: "TheHeader",
   data() {
     return {
+      currentLink: 1,
       links: [
         {
           text: "Characters",
@@ -79,17 +82,16 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Generics */
-header {
-  background-color: brown; /* TODO CANCEL */
-}
-
+<style lang="scss" scoped>
 /* Utils */
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+// variables
+$primary: #0282f9;
+$secondary: #1c1c1c;
 
 /* Component Custom */
 #navbar {
@@ -97,39 +99,40 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-}
 
-img {
-  display: block;
-  width: 50px;
-}
+  img {
+    display: block;
+    width: 50px;
+  }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
 
-ul li {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+    li {
+      height: 100%;
+      display: flex;
+      align-items: center;
 
-ul li a {
-  display: inline-block;
-  font-size: 0.6rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  border-bottom: 2px solid transparent;
-  padding: calc(35px + 2px - 0.6rem) 0.8rem;
-}
+      a {
+        display: inline-block;
+        font-size: 0.6rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $secondary;
+        border-bottom: 2px solid transparent;
+        padding: calc(35px + 2px - 0.6rem) 0.8rem;
 
-ul li a:hover,
-ul li a.active {
-  color: blue;
-  border-bottom: 2px solid blue;
+        &:hover,
+        &.active {
+          color: $primary;
+          border-bottom: 2px solid $primary;
+        }
+      }
+    }
+  }
 }
 </style>

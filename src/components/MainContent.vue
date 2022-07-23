@@ -16,7 +16,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+// variables
+$primary: #0282f9;
+$secondary: #1c1c1c;
+$tertiary: #303030;
+
 /* Utils */
 .container {
   max-width: 1000px;
@@ -25,11 +30,11 @@ export default {
 
 /* Component */
 #content-todo {
-  background-color: black;
+  background-color: $secondary;
   padding: 2rem 0;
-}
 
-h2 {
-  color: white;
+  h2 {
+    color: white;
+  }
 }
 </style>

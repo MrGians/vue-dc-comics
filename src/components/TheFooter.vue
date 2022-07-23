@@ -205,11 +205,11 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Generics */
-footer {
-  background-color: grey; /* TODO CANCEL */
-}
+<style lang="scss" scoped>
+// variables
+$primary: #0282f9;
+$secondary: #1c1c1c;
+$tertiary: #303030;
 
 /* Utils */
 .container {
@@ -222,96 +222,96 @@ footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+      padding-right: 2rem;
+
+      .row.links {
+        padding: 1.2rem;
+
+        h4 {
+          color: white;
+          text-transform: uppercase;
+        }
+
+        ul {
+          list-style-type: none;
+          margin-bottom: 0.5rem;
+
+          li {
+            line-height: 0.8rem;
+
+            a {
+              font-size: 0.55rem;
+              text-decoration: none;
+              color: #adadad;
+            }
+          }
+        }
+      }
+    }
+
+    .col.logo {
+      width: 450px;
+      height: 250px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
-#footer-top .row {
-  display: flex;
-  justify-content: space-between;
-}
-
-#footer-top .col {
-  padding-right: 2rem;
-}
-
-#footer-top .row.links {
-  padding: 1.2rem;
-}
-
-#footer-top h4 {
-  color: white;
-  text-transform: uppercase;
-}
-#footer-top ul {
-  list-style-type: none;
-  margin-bottom: 0.5rem;
-}
-
-#footer-top ul li {
-  line-height: 0.8rem;
-}
-
-#footer-top ul li a {
-  font-size: 0.55rem;
-  text-decoration: none;
-  color: rgb(173, 173, 173);
-}
-
-#footer-top .col.logo {
-  width: 450px;
-  height: 250px;
-  overflow: hidden;
-}
-
-#footer-top .col.logo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 /* Component | Footer Bottom */
 #footer-bottom {
-  background-color: grey;
-}
+  background-color: $tertiary;
 
-#footer-bottom .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-#footer-bottom .col .btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  color: white;
-  padding: 0.5rem 0.8rem;
-  margin: 1.5rem 0;
-  border: 2px solid blue;
-}
+    .col .btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      padding: 0.5rem 0.8rem;
+      margin: 1.5rem 0;
+      border: 2px solid $primary;
+    }
 
-#footer-bottom .social-links {
-  display: flex;
-}
+    .col.social-links {
+      display: flex;
 
-#footer-bottom .social-links > * {
-  padding: 0.5rem;
-}
+      & > * {
+        padding: 0.5rem;
+      }
+      h4 {
+        text-transform: uppercase;
+        color: $primary;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
 
-#footer-bottom .social-links h4 {
-  text-transform: uppercase;
-  color: blue;
-}
-
-#footer-bottom .social-links a {
-  text-decoration: none;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-#footer-bottom .social-links img {
-  width: 100%;
-  height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 </style>
