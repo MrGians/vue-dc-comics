@@ -4,7 +4,9 @@
       <!-- Main Navbar -->
       <nav id="navbar">
         <!-- DC Logo -->
-        <img src="../assets/img/dc-logo.png" alt="DC Logo" />
+        <a href="#">
+          <img src="../assets/img/dc-logo.png" alt="DC Logo" />
+        </a>
 
         <!-- Navbar Links -->
         <ul>
