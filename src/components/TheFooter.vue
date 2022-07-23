@@ -70,11 +70,9 @@
           <!-- Social Follow Links -->
           <div class="col social-links">
             <h4>Follow Us</h4>
-            <a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope" /></a>
-            <a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest" /></a>
-            <a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube" /></a>
+            <a v-for="social in socialLinks" :key="social" href="#"
+              ><img :src="social.src" :alt="social.text"
+            /></a>
           </div>
         </div>
       </div>
@@ -194,6 +192,13 @@ export default {
           text: "DC Power Visa",
           url: "#",
         },
+      ],
+      socialLinks: [
+        { text: "Facebook", src: require("../assets/img/footer-facebook.png") },
+        { text: "Periscope", src: require("../assets/img/footer-periscope.png") },
+        { text: "Pinterest", src: require("../assets/img/footer-pinterest.png") },
+        { text: "Twitter", src: require("../assets/img/footer-twitter.png") },
+        { text: "Youtube", src: require("../assets/img/footer-youtube.png") },
       ],
     };
   },
