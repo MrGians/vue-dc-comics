@@ -17,18 +17,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// variables
-$primary: #0282f9;
-$secondary: #1c1c1c;
-$tertiary: #303030;
+@import "./../assets/sass/style.scss";
 
-/* Utils */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Component */
+// # MainContent Component
 #content-todo {
   background-color: $secondary;
   padding: 2rem 0;

@@ -206,25 +206,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// variables
-$primary: #0282f9;
-$secondary: #1c1c1c;
-$tertiary: #303030;
+@import "./../assets/sass/style.scss";
 
-/* Utils */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+// # TheFooter Component
 
-/* Component | Footer Top */
+// | Footer Top
 #footer-top {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   .row {
-    display: flex;
     justify-content: space-between;
 
     .col {
@@ -239,7 +231,6 @@ $tertiary: #303030;
         }
 
         ul {
-          list-style-type: none;
           margin-bottom: 0.5rem;
 
           li {
@@ -247,7 +238,6 @@ $tertiary: #303030;
 
             a {
               font-size: 0.55rem;
-              text-decoration: none;
               color: #adadad;
             }
           }
@@ -270,23 +260,22 @@ $tertiary: #303030;
   }
 }
 
-/* Component | Footer Bottom */
+// | Footer Bottom
 #footer-bottom {
   background-color: $tertiary;
 
   .row {
-    display: flex;
+    @include flex_center("cross");
+
     justify-content: space-between;
-    align-items: center;
 
     .col .btn {
-      text-decoration: none;
-      text-transform: uppercase;
       display: inline-block;
+      text-transform: uppercase;
       color: white;
       padding: 0.5rem 0.8rem;
-      margin: 1.5rem 0;
       border: 2px solid $primary;
+      margin: 1.5rem 0;
     }
 
     .col.social-links {
@@ -300,7 +289,6 @@ $tertiary: #303030;
         color: $primary;
       }
       a {
-        text-decoration: none;
         display: inline-block;
         width: 40px;
         height: 40px;

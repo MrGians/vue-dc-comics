@@ -85,21 +85,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Utils */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+@import "./../assets/sass/style.scss";
 
-// variables
-$primary: #0282f9;
-$secondary: #1c1c1c;
-
-/* Component Custom */
+// # TheHeader Component
 #navbar {
-  display: flex;
+  @include flex_center("cross");
   justify-content: space-between;
-  align-items: center;
   height: 70px;
 
   img {
@@ -108,25 +99,21 @@ $secondary: #1c1c1c;
   }
 
   ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
+    @include flex_center("cross");
     height: 100%;
 
     li {
       height: 100%;
-      display: flex;
-      align-items: center;
+      @include flex_center("cross");
 
       a {
         display: inline-block;
         font-size: 0.6rem;
         font-weight: 700;
-        text-decoration: none;
-        text-transform: uppercase;
         color: $secondary;
-        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
         padding: calc(35px + 2px - 0.6rem) 0.8rem;
+        border-bottom: 2px solid transparent;
 
         &:hover,
         &.active {
