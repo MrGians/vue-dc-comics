@@ -7,130 +7,10 @@
       <div class="container">
         <h4>Current Series</h4>
         <div class="row">
-          <div class="col card">
+          <div v-for="cover in currentSeries" :key="cover.series" class="col card">
             <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
-            </figure>
-          </div>
-          <div class="col card">
-            <figure>
-              <img
-                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-                alt="ddd"
-              />
-              <figcaption>some text description</figcaption>
+              <img :src="cover.thumb" :alt="cover.series" />
+              <figcaption>{{ cover.series }}</figcaption>
             </figure>
           </div>
         </div>
@@ -187,9 +67,17 @@ export default {
 #current-series {
   background-color: $secondary;
   padding: 2rem 0;
+  position: relative;
 
   h4 {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+
+    text-transform: uppercase;
     color: white;
+    background-color: $primary;
+    padding: 0.5rem 1.2rem;
   }
   .row {
     flex-wrap: wrap;
