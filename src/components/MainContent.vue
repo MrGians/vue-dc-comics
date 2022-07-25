@@ -196,19 +196,19 @@ export default {
     margin: 0 -1rem;
 
     .col {
-      width: calc(100% / 6 - 1rem);
-      margin: 0 1rem;
+      width: calc(100% / 6 - 2rem);
+      margin: 1rem;
     }
 
     .card {
-      height: 150px;
+      height: 180px;
 
       figure {
         height: 100%;
         width: 100%;
 
         img {
-          height: 100%;
+          height: 80%;
           width: 100%;
           object-fit: cover;
           object-position: top;
