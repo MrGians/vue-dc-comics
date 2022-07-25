@@ -10,6 +10,8 @@
           </figure>
         </div>
       </div>
+      <!-- Load More Button -->
+      <button class="btn">Load More</button>
     </div>
   </section>
 </template>
@@ -71,6 +73,17 @@ export default {
         }
       }
     }
+  }
+  .btn {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: $primary;
+    border: 2px solid $primary;
+    padding: 0.5rem 3.5rem;
+    margin: 4rem auto 0;
+    cursor: pointer;
   }
 }
 </style>
