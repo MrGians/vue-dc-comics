@@ -1,14 +1,14 @@
 <template>
   <div>
     <TheHeader />
-    <MainContent :current-series="currentSeries" />
+    <MainContent :current-series="currentSeries" :banner-items="bannerItems" />
     <TheFooter />
   </div>
 </template>
 
 <script>
 // Data
-import currentSeries from "./assets/data/dc-comics.json";
+import { currentSeries, bannerItems } from "./assets/data/index.js";
 // Components
 import TheHeader from "./components/TheHeader.vue";
 import MainContent from "./components/MainContent.vue";
@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       currentSeries,
+      bannerItems,
     };
   },
 };
