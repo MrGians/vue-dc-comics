@@ -2,13 +2,26 @@
   <div>
     <TheHeader :links="headerLinks" />
     <MainContent :current-series="currentSeries" :banner-items="bannerItems" />
-    <TheFooter />
+    <TheFooter
+      :dc-comics-links="footerDcComicsLinks"
+      :shop-links="footerShopLinks"
+      :dc-links="footerDcLinks"
+      :sites-links="footerSitesLinks"
+    />
   </div>
 </template>
 
 <script>
 // Data
-import { currentSeries, bannerItems, headerLinks } from "./assets/data/index.js";
+import {
+  currentSeries,
+  bannerItems,
+  headerLinks,
+  footerDcComicsLinks,
+  footerShopLinks,
+  footerDcLinks,
+  footerSitesLinks,
+} from "./assets/data/index.js";
 // Components
 import TheHeader from "./components/TheHeader.vue";
 import MainContent from "./components/MainContent.vue";
@@ -22,6 +35,10 @@ export default {
       currentSeries,
       bannerItems,
       headerLinks,
+      footerDcComicsLinks,
+      footerShopLinks,
+      footerDcLinks,
+      footerSitesLinks,
     };
   },
 };
