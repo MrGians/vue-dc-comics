@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <MainContent />
+    <MainContent :current-series="currentSeries" />
     <TheFooter />
   </div>
 </template>

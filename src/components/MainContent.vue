@@ -1,13 +1,15 @@
 <template>
   <main>
-    <!-- Coontent ToDo -->
-    <section id="content-todo">
+    <!-- Jumbotron -->
+    <section id="jumbotron"></section>
+    <!-- Current Series -->
+    <section id="current-series">
       <div class="container">
-        <h2>--> Content goes here</h2>
+        <h4>Current Series</h4>
       </div>
     </section>
-    <!-- Bonus Section -->
-    <section id="bonus">
+    <!-- Banner Section -->
+    <section id="banner">
       <div class="container">
         <div class="row">
           <div v-for="item in bonusItems" :key="item" class="col">
@@ -23,6 +25,9 @@
 <script>
 export default {
   name: "MainContent",
+  props: {
+    currentSeries: Array,
+  },
   data() {
     return {
       bonusItems: [
@@ -42,8 +47,15 @@ export default {
 
 // # MainContent Component
 
-// | Content To-Do
-#content-todo {
+// Jumbotron
+#jumbotron {
+  height: 300px;
+  background-image: url("./../assets/img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// | Current Series
+#current-series {
   background-color: $secondary;
   padding: 2rem 0;
 
@@ -52,8 +64,8 @@ export default {
   }
 }
 
-// | Content Bonus
-#bonus {
+// | Content Banner
+#banner {
   background-color: $primary;
   color: white;
 
