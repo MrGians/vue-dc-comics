@@ -6,6 +6,134 @@
     <section id="current-series">
       <div class="container">
         <h4>Current Series</h4>
+        <div class="row">
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+          <div class="col card">
+            <figure>
+              <img
+                src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
+                alt="ddd"
+              />
+              <figcaption>some text description</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Banner Section -->
@@ -54,13 +182,44 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 // | Current Series
 #current-series {
   background-color: $secondary;
   padding: 2rem 0;
 
-  h2 {
+  h4 {
     color: white;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    .col {
+      width: calc(100% / 6 - 1rem);
+      margin: 0 1rem;
+    }
+
+    .card {
+      height: 150px;
+
+      figure {
+        height: 100%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+        figcaption {
+          color: white;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
 
