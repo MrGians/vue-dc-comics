@@ -21,16 +21,8 @@
 <script>
 export default {
   name: "FooterBottom",
-  data() {
-    return {
-      socialLinks: [
-        { text: "Facebook", src: require("../assets/img/footer-facebook.png") },
-        { text: "Periscope", src: require("../assets/img/footer-periscope.png") },
-        { text: "Pinterest", src: require("../assets/img/footer-pinterest.png") },
-        { text: "Twitter", src: require("../assets/img/footer-twitter.png") },
-        { text: "Youtube", src: require("../assets/img/footer-youtube.png") },
-      ],
-    };
+  props: {
+    socialLinks: Array,
   },
 };
 </script>

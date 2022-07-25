@@ -5,6 +5,7 @@ import footerDcComicsLinks from "./_footer-dc-comics-links";
 import footerShopLinks from "./_footer-shop-links";
 import footerDcLinks from "./_footer-dc-links";
 import footerSitesLinks from "./_footer-sites-links";
+import footerSocialLinks from "./_footer-social-links";
 
 export {
   currentSeries,
@@ -14,4 +15,5 @@ export {
   footerShopLinks,
   footerDcLinks,
   footerSitesLinks,
+  footerSocialLinks,
 };

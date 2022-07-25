@@ -8,7 +8,7 @@
       :sites-links="sitesLinks"
     />
     <!-- Footer Bottom -->
-    <FooterBottom />
+    <FooterBottom :social-links="socialLinks" />
   </footer>
 </template>
 
@@ -23,6 +23,7 @@ export default {
     shopLinks: Array,
     dcLinks: Array,
     sitesLinks: Array,
+    socialLinks: Array,
   },
 };
 </script>

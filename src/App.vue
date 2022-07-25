@@ -7,6 +7,7 @@
       :shop-links="footerShopLinks"
       :dc-links="footerDcLinks"
       :sites-links="footerSitesLinks"
+      :social-links="footerSocialLinks"
     />
   </div>
 </template>
@@ -21,6 +22,7 @@ import {
   footerShopLinks,
   footerDcLinks,
   footerSitesLinks,
+  footerSocialLinks,
 } from "./assets/data/index.js";
 // Components
 import TheHeader from "./components/TheHeader.vue";
@@ -39,6 +41,7 @@ export default {
       footerShopLinks,
       footerDcLinks,
       footerSitesLinks,
+      footerSocialLinks,
     };
   },
 };
